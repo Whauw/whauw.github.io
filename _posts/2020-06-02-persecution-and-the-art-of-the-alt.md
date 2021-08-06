@@ -5,7 +5,7 @@ date: 2020-06-02
 category: essay
 tags: [politics, governance, observation]
 use_math: false
-preview: 
+preview:
 ---
 The internet is a ghoulish cauldron, made of stainless steel and fueled by alchemy; it overflows with swirling ideas in their many forms. The digital entities of today that pour their ephemeral ideas from small glass flasks into the cauldron are descended from flesh-and-blood entities of the past.
 
@@ -18,9 +18,9 @@ The flesh-and-blood entities of the fountain era each represented a human being.
 Such is the subject of Strauss' Persecution and the Art of Writing:
 
 > An exoteric book contains then two teachings: a popular teaching of an edifying character, which is in the foreground; and a philosophic teaching concerning the most important subject, which is indicated only between the lines.
-> 
+>
 > . . .
-> 
+>
 > It has all the advantages of private communication without having its greatest disadvantage - that it reaches only the writer's acquaintances. It has all the advantages of public communication without having its greatest disadvantage - capital punishment for the author.
 
 We thank these venerable authors of the past for their forfeiture of clarity in exchange for longevity. If Anaxagoras, Protagoras, Socrates, Plato, Xenophon, Aristotle, Avicenna, Averroes, Maimonides, Grotius, Descartes, Hobbes, Spinoza, Locke, Bayle, Wolff, Montesquieu, Voltaire, Rousseau, Lessing and Kant had not intentionally mired themselves in the muck of obscurantism, their ideas would not have survived to the modern era. Times have changed, though. Moloch's granite cocks have sprung from the surface of the Earth in abundance, from George Washington's of yore to Marc Benioff's of today. The cauldron has been cast. The anonymous has arisen.

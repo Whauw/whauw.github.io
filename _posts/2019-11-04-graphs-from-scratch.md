@@ -80,7 +80,7 @@ Back to our imaginations, though. Notice how there are some places in the graph 
 
 ![](../images/graphs-from-scratch/img4.png){:height="300px" width="300px"}
 
-Something about our rule from earlier, that 'every dot needs to be connected to at least one other dot', isn't quite good enough. What we need to do is say that 'starting at any dot in the graph, you need to be able to get to every other dot in the graph by going along the connections'. Let's try and add some connections so that this works. 
+Something about our rule from earlier, that 'every dot needs to be connected to at least one other dot', isn't quite good enough. What we need to do is say that 'starting at any dot in the graph, you need to be able to get to every other dot in the graph by going along the connections'. Let's try and add some connections so that this works.
 
 ![](../images/graphs-from-scratch/img5.png){:height="300px" width="300px"}
 
@@ -100,7 +100,7 @@ In some meaningful way, they are! In 99.9% of cases, mathematicians consider the
 
 ![](../images/graphs-from-scratch/img9.png){:height="300px" width="300px"}
 
-Is the same thing as merely _saying_ that 'There are 3 dots. Dot 1 and dot 2 are connected, dot 2 and dot 3 are connected, and dot 3 and dot 1 are connected.' Let's invent some way of expressing those relationships with less words. If two dots are connected, let's put them in some parentheses and separate them by a comma, like this: $$(dot_{1},dot_{2})$$. 
+Is the same thing as merely _saying_ that 'There are 3 dots. Dot 1 and dot 2 are connected, dot 2 and dot 3 are connected, and dot 3 and dot 1 are connected.' Let's invent some way of expressing those relationships with less words. If two dots are connected, let's put them in some parentheses and separate them by a comma, like this: $$(dot_{1},dot_{2})$$.
 
 We can do better. Instead of calling them dot 1 and dot 2, let's just use their numbers, like this: $$(1,2)$$. The order of the numbers doesn't matter though, so we could flip-flop any of them inside of their parentheses if we wanted to. In a way, these numbers and parentheses really _are_ the dots and edges.
 
@@ -120,11 +120,11 @@ To accomplish our goal of representing the dots and connections of the pyramid w
 
 After translation, the pyramid is actually just this list of pairs of numbers in parentheses: $$\{(1,2),(2,3),(3,1),(1,4),(2,4),(3,4)\}$$. There's a lot of repeated stuff in that list of parentheses and numbers though, so maybe there's a better way to keep track of all the information. Let's try doing that with a square of numbers, where if there's a connection between dot a and dot b, we put a $$1$$ in the $$a$$th column and $$b$$th row of the square. That's a lot to think about at once, so let's go one pair of numbers in the list at a time!
 
-We have 4 dots, so we need 4 columns and 4 rows in our square of numbers. Because of this, notice how we'll always end up using _squares_ instead of ugly rectangles: 
+We have 4 dots, so we need 4 columns and 4 rows in our square of numbers. Because of this, notice how we'll always end up using _squares_ instead of ugly rectangles:
 
 $$\begin{bmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}$$
 
-If you graduated high school, you've probably noticed that this is just a matrix. Matrices are, as it turns out, useful ways of encoding information about graphs. Unfortunately, the word 'matrix' is burned into most peoples' minds as quasi-traumatic, and matrices are fundamentally just squares and rectangles of numbers, so I'll keep calling them that. Now, the first pair is $$(1,2)$$, so let's put a $$1$$ in the spot at the 1st column and 2nd row: 
+If you graduated high school, you've probably noticed that this is just a matrix. Matrices are, as it turns out, useful ways of encoding information about graphs. Unfortunately, the word 'matrix' is burned into most peoples' minds as quasi-traumatic, and matrices are fundamentally just squares and rectangles of numbers, so I'll keep calling them that. Now, the first pair is $$(1,2)$$, so let's put a $$1$$ in the spot at the 1st column and 2nd row:
 
 $$\begin{bmatrix}0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}$$
 
@@ -156,13 +156,13 @@ So if a graph has no loops, then its corresponding square of numbers will have 0
 
 Whichever dot I pick in the pyramid, I can get to any other dot by only going across one connection! Mathematicians usually call this kind of graph _dense._ We just figured out something really interesting -- if we take a random, perhaps extremely complicated graph, and go through this simple operation of translating it into pairs of numbers and then a square of numbers, we can _instantly_ see whether or not it's dense. All we have to do is check if there are any zeroes that _aren't_ on the diagonal.
 
-We started with nothing but our intuition and pictures, then made up a language for thinking about those pictures, then made up another language to think about our first language, and out popped a beautiful relationship! We can now translate _any_ graph into a number-square, and it magically becomes incredibly easy to know whether or not that graph is dense. We took a normally very complicated, difficult-to-test property, and made it easy enough for a pre-schooler to check. 
+We started with nothing but our intuition and pictures, then made up a language for thinking about those pictures, then made up another language to think about our first language, and out popped a beautiful relationship! We can now translate _any_ graph into a number-square, and it magically becomes incredibly easy to know whether or not that graph is dense. We took a normally very complicated, difficult-to-test property, and made it easy enough for a pre-schooler to check.
 
-_This_ is what math is. Math is the act of starting somewhere interesting and just messing around, playing, until cool things start popping out. 
+_This_ is what math is. Math is the act of starting somewhere interesting and just messing around, playing, until cool things start popping out.
 
 It's enthralling, it's visceral, and it's extremely fun. Reasoning from scratch is one of the purest joys that our world has to offer, and I hope you see at least some of the beauty and appeal of doing it.
 
-I'm deeply sorry if it wasn't shown to you any earlier in your life, but now is your opportunity to go out and explore! 
+I'm deeply sorry if it wasn't shown to you any earlier in your life, but now is your opportunity to go out and explore!
 
 As some fun follow-up questions to get you started, can you think about what a dense graph would look like with 5 dots instead of 4? What about 6, 7, or 10,000 dots? Can you write down what the number-squares would look like for those graphs, even without knowing what the graphs look like themselves?
 

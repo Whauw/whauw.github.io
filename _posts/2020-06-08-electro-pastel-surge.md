@@ -2,10 +2,10 @@
 layout: post
 title: Electro-pastel Surge
 date: 2020-06-08
-category: 
+category:
 tags: []
 use_math: false
-preview: 
+preview:
 ---
 
 Through the quintuple-paned suburban lenses,
